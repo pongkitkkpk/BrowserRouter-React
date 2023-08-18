@@ -11,9 +11,9 @@ function App() {
       {/* <Header/>
       <p><center><Calendar/></center></p>
       <Content/>
-      <Banner/>
       <Calculator2/>
-      <Footer/> */}
+      <Footer/>
+      <Banner/> */}
       <EventData2/>
       
     </>
