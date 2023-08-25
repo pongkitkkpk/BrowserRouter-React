@@ -3,9 +3,10 @@ import React from 'react'
 // import Calendar from './class-components'
 // import Banner from './banner'
 // import { Calculator2 } from './calculator'
-import { EventData2 } from './event-data'
+// import { EventData2 } from './event-data'
 // import RefsFunc from './refs-func'
-import RefsArray from './refs-array'
+// import RefsArray from './refs-array'
+import MessageBox from './state-func'
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
       <Footer/>
       <Banner/> 
       <EventData2/>
-       <RefsFunc/> */}
-      <RefsArray/>
+       <RefsFunc/> 
+      <RefsArray/>*/}
+      <MessageBox/>
       
     </>
   )
