@@ -4,7 +4,8 @@ import React from 'react'
 // import Banner from './banner'
 // import { Calculator2 } from './calculator'
 import { EventData2 } from './event-data'
-import RefsFunc from './refs-func'
+// import RefsFunc from './refs-func'
+import RefsArray from './refs-array'
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <Calculator2/>
       <Footer/>
       <Banner/> 
-      <EventData2/>*/}
-      <RefsFunc/>
+      <EventData2/>
+       <RefsFunc/> */}
+      <RefsArray/>
       
     </>
   )
