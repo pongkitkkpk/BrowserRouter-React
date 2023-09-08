@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import { Header,Content,Footer } from './func-components'
 // import Calendar from './class-components'
 // import Banner from './banner'
@@ -8,9 +8,12 @@ import React from 'react'
 // import RefsArray from './refs-array'
 // import MessageBox from './state-func'
 import { userContext } from './context'
+import Header2 from './context-header2'
+import Content2 from './context-content2'
 // import Header from './context-header'
-import Content from './context-content'
+// import Content from './context-content'
 function App() {
+  let [user,setUser] = useState()
   return (
     <>
       {/* <Header/>
@@ -23,10 +26,14 @@ function App() {
        <RefsFunc/> 
       <RefsArray/>
       <MessageBox/> */}
-      <userContext.Provider value={'Tom Jerry'}>
-        {/* <Header/> */}
+      {/* <userContext.Provider value={'Tom Jerry'}>
+        <Header/>
         <Content/>
-      </userContext.Provider>
+      </userContext.Provider> */}
+      <userContext.Provider value={[user,setUser]}>
+        <Header2/>
+        <Content2/>
+      </userContext.Provider> 
       
     </>
   )
