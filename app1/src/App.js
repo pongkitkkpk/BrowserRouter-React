@@ -6,8 +6,10 @@ import React from 'react'
 // import { EventData2 } from './event-data'
 // import RefsFunc from './refs-func'
 // import RefsArray from './refs-array'
-import MessageBox from './state-func'
-
+// import MessageBox from './state-func'
+import { userContext } from './context'
+// import Header from './context-header'
+import Content from './context-content'
 function App() {
   return (
     <>
@@ -19,8 +21,12 @@ function App() {
       <Banner/> 
       <EventData2/>
        <RefsFunc/> 
-      <RefsArray/>*/}
-      <MessageBox/>
+      <RefsArray/>
+      <MessageBox/> */}
+      <userContext.Provider value={'Tom Jerry'}>
+        {/* <Header/> */}
+        <Content/>
+      </userContext.Provider>
       
     </>
   )
