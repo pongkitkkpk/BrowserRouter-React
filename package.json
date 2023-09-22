@@ -1,6 +1,8 @@
 {
   "scripts": {
     "start": "node your-script.js"
-}
-  
+  },
+  "dependencies": {
+    "react-router-dom": "^6.16.0"
+  }
 }
